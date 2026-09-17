@@ -1,0 +1,2788 @@
+[
+  {
+    "document_id": "django-4.0-001",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.conf.urls.url",
+    "symbol_aliases": [
+      "django.conf.urls.url",
+      "url"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.conf.urls.url() is removed after being deprecated in Django 3.0.",
+    "replacement": "Use django.urls.re_path() or django.urls.path() instead.",
+    "labels": [
+      "urls",
+      "routing",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-002",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.encoding.force_text",
+    "symbol_aliases": [
+      "django.utils.encoding.force_text",
+      "force_text"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.encoding.force_text() and smart_text() are removed after being deprecated in Django 3.0.",
+    "replacement": "Use django.utils.encoding.force_str() and smart_str() instead.",
+    "labels": [
+      "encoding",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-003",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.http.is_safe_url",
+    "symbol_aliases": [
+      "django.utils.http.is_safe_url",
+      "is_safe_url"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.http.is_safe_url() is removed after being deprecated in Django 3.0.",
+    "replacement": "Use django.utils.http.url_has_allowed_host_and_scheme() instead.",
+    "labels": [
+      "http",
+      "security",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-004",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.ugettext",
+    "symbol_aliases": [
+      "django.utils.translation.ugettext",
+      "ugettext",
+      "django.utils.translation.ugettext_lazy",
+      "ugettext_lazy"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.ugettext(), ugettext_lazy(), ugettext_noop(), ungettext(), and ungettext_lazy() are removed after being deprecated in Django 3.0.",
+    "replacement": "Use django.utils.translation.gettext(), gettext_lazy(), gettext_noop(), ngettext(), and ngettext_lazy() instead.",
+    "labels": [
+      "i18n",
+      "translation",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-005",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.http.HttpRequest.is_ajax",
+    "symbol_aliases": [
+      "django.http.HttpRequest.is_ajax",
+      "HttpRequest.is_ajax",
+      "request.is_ajax",
+      "is_ajax"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "HttpRequest.is_ajax() is removed after being deprecated in Django 3.1.",
+    "replacement": "Check request.headers.get('x-requested-with') == 'XMLHttpRequest' instead.",
+    "labels": [
+      "http",
+      "request",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-006",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.conf.urls.url",
+    "symbol_aliases": [
+      "django.conf.urls.url",
+      "url",
+      "url"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.conf.urls.url has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for url in Django 4.0.",
+    "labels": [
+      "conf",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-007",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.conf.urls.patterns",
+    "symbol_aliases": [
+      "django.conf.urls.patterns",
+      "patterns",
+      "patterns"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.conf.urls.patterns has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for patterns in Django 4.0.",
+    "labels": [
+      "conf",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-008",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.conf.urls.handler404",
+    "symbol_aliases": [
+      "django.conf.urls.handler404",
+      "handler404",
+      "handler404"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.conf.urls.handler404 has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for handler404 in Django 4.0.",
+    "labels": [
+      "conf",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-009",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.conf.urls.handler500",
+    "symbol_aliases": [
+      "django.conf.urls.handler500",
+      "handler500",
+      "handler500"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.conf.urls.handler500 has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for handler500 in Django 4.0.",
+    "labels": [
+      "conf",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-010",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.conf.urls.include",
+    "symbol_aliases": [
+      "django.conf.urls.include",
+      "include",
+      "include"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.conf.urls.include has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for include in Django 4.0.",
+    "labels": [
+      "conf",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-011",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.encoding.force_text",
+    "symbol_aliases": [
+      "django.utils.encoding.force_text",
+      "force_text",
+      "force_text"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.encoding.force_text has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for force_text in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-012",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.encoding.smart_text",
+    "symbol_aliases": [
+      "django.utils.encoding.smart_text",
+      "smart_text",
+      "smart_text"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.encoding.smart_text has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for smart_text in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-013",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.encoding.filepath_to_uri",
+    "symbol_aliases": [
+      "django.utils.encoding.filepath_to_uri",
+      "filepath_to_uri",
+      "filepath_to_uri"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.encoding.filepath_to_uri has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for filepath_to_uri in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-014",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.http.is_safe_url",
+    "symbol_aliases": [
+      "django.utils.http.is_safe_url",
+      "is_safe_url",
+      "is_safe_url"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.http.is_safe_url has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for is_safe_url in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-015",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.http.cookie_date",
+    "symbol_aliases": [
+      "django.utils.http.cookie_date",
+      "cookie_date",
+      "cookie_date"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.http.cookie_date has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for cookie_date in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-016",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.http.http_date",
+    "symbol_aliases": [
+      "django.utils.http.http_date",
+      "http_date",
+      "http_date"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.http.http_date has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for http_date in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-017",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.ugettext",
+    "symbol_aliases": [
+      "django.utils.translation.ugettext",
+      "ugettext",
+      "ugettext"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.ugettext has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ugettext in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-018",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.ugettext_lazy",
+    "symbol_aliases": [
+      "django.utils.translation.ugettext_lazy",
+      "ugettext_lazy",
+      "ugettext_lazy"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.ugettext_lazy has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ugettext_lazy in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-019",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.ugettext_noop",
+    "symbol_aliases": [
+      "django.utils.translation.ugettext_noop",
+      "ugettext_noop",
+      "ugettext_noop"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.ugettext_noop has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ugettext_noop in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-020",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.ungettext",
+    "symbol_aliases": [
+      "django.utils.translation.ungettext",
+      "ungettext",
+      "ungettext"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.ungettext has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ungettext in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-021",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.ungettext_lazy",
+    "symbol_aliases": [
+      "django.utils.translation.ungettext_lazy",
+      "ungettext_lazy",
+      "ungettext_lazy"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.ungettext_lazy has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ungettext_lazy in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-022",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.translation.string_concat",
+    "symbol_aliases": [
+      "django.utils.translation.string_concat",
+      "string_concat",
+      "string_concat"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.utils.translation.string_concat has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for string_concat in Django 4.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-023",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.http.request.HttpRequest.is_ajax",
+    "symbol_aliases": [
+      "django.http.request.HttpRequest.is_ajax",
+      "HttpRequest.is_ajax",
+      "is_ajax"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.http.request.HttpRequest.is_ajax has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for HttpRequest.is_ajax in Django 4.0.",
+    "labels": [
+      "http",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-024",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.http.request.HttpRequest.raw_post_data",
+    "symbol_aliases": [
+      "django.http.request.HttpRequest.raw_post_data",
+      "HttpRequest.raw_post_data",
+      "raw_post_data"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.http.request.HttpRequest.raw_post_data has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for HttpRequest.raw_post_data in Django 4.0.",
+    "labels": [
+      "http",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-025",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.admin.AdminSite.actions",
+    "symbol_aliases": [
+      "django.contrib.admin.AdminSite.actions",
+      "AdminSite.actions",
+      "actions"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.contrib.admin.AdminSite.actions has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for AdminSite.actions in Django 4.0.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-026",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.admin.ModelAdmin.get_actions",
+    "symbol_aliases": [
+      "django.contrib.admin.ModelAdmin.get_actions",
+      "ModelAdmin.get_actions",
+      "get_actions"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.contrib.admin.ModelAdmin.get_actions has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ModelAdmin.get_actions in Django 4.0.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-027",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.admin.AdminFileWidget.template_with_initial",
+    "symbol_aliases": [
+      "django.contrib.admin.AdminFileWidget.template_with_initial",
+      "AdminFileWidget.template_with_initial",
+      "template_with_initial"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.contrib.admin.AdminFileWidget.template_with_initial has been removed in Django 4.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for AdminFileWidget.template_with_initial in Django 4.0.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-028",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "removed",
+    "affected_api": "django.core.signals.request_started",
+    "symbol_aliases": [
+      "django.core.signals.request_started",
+      "request_started",
+      "request_started"
+    ],
+    "source_section": "Features removed in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-removed-in-4-1",
+    "description": "django.core.signals.request_started has been removed in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for request_started in Django 4.1.",
+    "labels": [
+      "core",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-029",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "removed",
+    "affected_api": "django.core.signals.request_finished",
+    "symbol_aliases": [
+      "django.core.signals.request_finished",
+      "request_finished",
+      "request_finished"
+    ],
+    "source_section": "Features removed in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-removed-in-4-1",
+    "description": "django.core.signals.request_finished has been removed in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for request_finished in Django 4.1.",
+    "labels": [
+      "core",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-030",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "removed",
+    "affected_api": "django.core.signals.setting_changed.providing_args",
+    "symbol_aliases": [
+      "django.core.signals.setting_changed.providing_args",
+      "setting_changed.providing_args",
+      "providing_args"
+    ],
+    "source_section": "Features removed in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-removed-in-4-1",
+    "description": "django.core.signals.setting_changed.providing_args has been removed in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for setting_changed.providing_args in Django 4.1.",
+    "labels": [
+      "core",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-031",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.timezone.utc",
+    "symbol_aliases": [
+      "django.utils.timezone.utc",
+      "utc",
+      "utc"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.utils.timezone.utc has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use datetime.timezone.utc from standard library datetime.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-032",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.timezone.is_aware",
+    "symbol_aliases": [
+      "django.utils.timezone.is_aware",
+      "is_aware",
+      "is_aware"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.utils.timezone.is_aware has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for is_aware in Django 4.1.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-033",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.timezone.is_naive",
+    "symbol_aliases": [
+      "django.utils.timezone.is_naive",
+      "is_naive",
+      "is_naive"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.utils.timezone.is_naive has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for is_naive in Django 4.1.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-034",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.timezone.make_aware",
+    "symbol_aliases": [
+      "django.utils.timezone.make_aware",
+      "make_aware",
+      "make_aware"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.utils.timezone.make_aware has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for make_aware in Django 4.1.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-035",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.gis.admin.GeoModelAdmin",
+    "symbol_aliases": [
+      "django.contrib.gis.admin.GeoModelAdmin",
+      "GeoModelAdmin",
+      "GeoModelAdmin"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.gis.admin.GeoModelAdmin has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for GeoModelAdmin in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-036",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.gis.admin.OSMGeoAdmin",
+    "symbol_aliases": [
+      "django.contrib.gis.admin.OSMGeoAdmin",
+      "OSMGeoAdmin",
+      "OSMGeoAdmin"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.gis.admin.OSMGeoAdmin has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for OSMGeoAdmin in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-037",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.postgres.fields.JSONField",
+    "symbol_aliases": [
+      "django.contrib.postgres.fields.JSONField",
+      "JSONField",
+      "JSONField"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.postgres.fields.JSONField has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use django.db.models.JSONField instead.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-038",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.postgres.fields.CICharField",
+    "symbol_aliases": [
+      "django.contrib.postgres.fields.CICharField",
+      "CICharField",
+      "CICharField"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.postgres.fields.CICharField has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for CICharField in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-039",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.postgres.fields.CIEmailField",
+    "symbol_aliases": [
+      "django.contrib.postgres.fields.CIEmailField",
+      "CIEmailField",
+      "CIEmailField"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.postgres.fields.CIEmailField has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for CIEmailField in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-040",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.postgres.fields.CITextField",
+    "symbol_aliases": [
+      "django.contrib.postgres.fields.CITextField",
+      "CITextField",
+      "CITextField"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.postgres.fields.CITextField has been deprecated in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for CITextField in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-041",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.signals.post_init.providing_args",
+    "symbol_aliases": [
+      "django.db.models.signals.post_init.providing_args",
+      "post_init.providing_args",
+      "providing_args"
+    ],
+    "source_section": "Features removed in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-removed-in-4-1",
+    "description": "django.db.models.signals.post_init.providing_args has been removed in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for post_init.providing_args in Django 4.1.",
+    "labels": [
+      "db",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-042",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.signals.post_save.providing_args",
+    "symbol_aliases": [
+      "django.db.models.signals.post_save.providing_args",
+      "post_save.providing_args",
+      "providing_args"
+    ],
+    "source_section": "Features removed in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-removed-in-4-1",
+    "description": "django.db.models.signals.post_save.providing_args has been removed in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for post_save.providing_args in Django 4.1.",
+    "labels": [
+      "db",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-043",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.signals.pre_delete.providing_args",
+    "symbol_aliases": [
+      "django.db.models.signals.pre_delete.providing_args",
+      "pre_delete.providing_args",
+      "providing_args"
+    ],
+    "source_section": "Features removed in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-removed-in-4-1",
+    "description": "django.db.models.signals.pre_delete.providing_args has been removed in Django 4.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for pre_delete.providing_args in Django 4.1.",
+    "labels": [
+      "db",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.2-044",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.core.files.storage.get_storage_class",
+    "symbol_aliases": [
+      "django.core.files.storage.get_storage_class",
+      "get_storage_class",
+      "get_storage_class"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.core.files.storage.get_storage_class has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use django.core.files.storage.storages dictionary instead.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-045",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.core.files.storage.FileSystemStorage.get_available_name",
+    "symbol_aliases": [
+      "django.core.files.storage.FileSystemStorage.get_available_name",
+      "FileSystemStorage.get_available_name",
+      "get_available_name"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.core.files.storage.FileSystemStorage.get_available_name has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for FileSystemStorage.get_available_name in Django 4.2.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-046",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "breaking",
+    "affected_api": "django.contrib.auth.models.User.is_anonymous",
+    "symbol_aliases": [
+      "django.contrib.auth.models.User.is_anonymous",
+      "User.is_anonymous",
+      "is_anonymous"
+    ],
+    "source_section": "Features breaking in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-breaking-in-4-2",
+    "description": "django.contrib.auth.models.User.is_anonymous has been breaking in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for User.is_anonymous in Django 4.2.",
+    "labels": [
+      "contrib",
+      "breaking",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.2-047",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "breaking",
+    "affected_api": "django.contrib.auth.models.User.is_authenticated",
+    "symbol_aliases": [
+      "django.contrib.auth.models.User.is_authenticated",
+      "User.is_authenticated",
+      "is_authenticated"
+    ],
+    "source_section": "Features breaking in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-breaking-in-4-2",
+    "description": "django.contrib.auth.models.User.is_authenticated has been breaking in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for User.is_authenticated in Django 4.2.",
+    "labels": [
+      "contrib",
+      "breaking",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.2-048",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.forms.fields.Field.clean",
+    "symbol_aliases": [
+      "django.forms.fields.Field.clean",
+      "Field.clean",
+      "clean"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.forms.fields.Field.clean has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Field.clean in Django 4.2.",
+    "labels": [
+      "forms",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-049",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.forms.fields.RegexField.empty_value",
+    "symbol_aliases": [
+      "django.forms.fields.RegexField.empty_value",
+      "RegexField.empty_value",
+      "empty_value"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.forms.fields.RegexField.empty_value has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for RegexField.empty_value in Django 4.2.",
+    "labels": [
+      "forms",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-050",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.forms.fields.URLField.empty_value",
+    "symbol_aliases": [
+      "django.forms.fields.URLField.empty_value",
+      "URLField.empty_value",
+      "empty_value"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.forms.fields.URLField.empty_value has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for URLField.empty_value in Django 4.2.",
+    "labels": [
+      "forms",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-051",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.text.slugify.allow_unicode",
+    "symbol_aliases": [
+      "django.utils.text.slugify.allow_unicode",
+      "slugify.allow_unicode",
+      "allow_unicode"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.utils.text.slugify.allow_unicode has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for slugify.allow_unicode in Django 4.2.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-052",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.text.unescape_entities",
+    "symbol_aliases": [
+      "django.utils.text.unescape_entities",
+      "unescape_entities",
+      "unescape_entities"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.utils.text.unescape_entities has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use html.unescape() from the Python standard library html module.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-053",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.text.javascript_quote",
+    "symbol_aliases": [
+      "django.utils.text.javascript_quote",
+      "javascript_quote",
+      "javascript_quote"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.utils.text.javascript_quote has been deprecated in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for javascript_quote in Django 4.2.",
+    "labels": [
+      "utils",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-054",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "breaking",
+    "affected_api": "django.views.generic.base.ContextMixin.extra_context",
+    "symbol_aliases": [
+      "django.views.generic.base.ContextMixin.extra_context",
+      "ContextMixin.extra_context",
+      "extra_context"
+    ],
+    "source_section": "Features breaking in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-breaking-in-4-2",
+    "description": "django.views.generic.base.ContextMixin.extra_context has been breaking in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for ContextMixin.extra_context in Django 4.2.",
+    "labels": [
+      "views",
+      "breaking",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.2-055",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "breaking",
+    "affected_api": "django.views.generic.base.View.as_view",
+    "symbol_aliases": [
+      "django.views.generic.base.View.as_view",
+      "View.as_view",
+      "as_view"
+    ],
+    "source_section": "Features breaking in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-breaking-in-4-2",
+    "description": "django.views.generic.base.View.as_view has been breaking in Django 4.2 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for View.as_view in Django 4.2.",
+    "labels": [
+      "views",
+      "breaking",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-056",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.timezone.utc",
+    "symbol_aliases": [
+      "django.utils.timezone.utc",
+      "utc",
+      "utc"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.utils.timezone.utc has been removed in Django 5.0 release notes.",
+    "replacement": "Use datetime.timezone.utc from standard library datetime.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-057",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.timezone.FixedOffset",
+    "symbol_aliases": [
+      "django.utils.timezone.FixedOffset",
+      "FixedOffset",
+      "FixedOffset"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.utils.timezone.FixedOffset has been removed in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for FixedOffset in Django 5.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-058",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.gis.admin.GeoModelAdmin",
+    "symbol_aliases": [
+      "django.contrib.gis.admin.GeoModelAdmin",
+      "GeoModelAdmin",
+      "GeoModelAdmin"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.contrib.gis.admin.GeoModelAdmin has been removed in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for GeoModelAdmin in Django 5.0.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-059",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.gis.admin.OSMGeoAdmin",
+    "symbol_aliases": [
+      "django.contrib.gis.admin.OSMGeoAdmin",
+      "OSMGeoAdmin",
+      "OSMGeoAdmin"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.contrib.gis.admin.OSMGeoAdmin has been removed in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for OSMGeoAdmin in Django 5.0.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-060",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.core.files.storage.get_storage_class",
+    "symbol_aliases": [
+      "django.core.files.storage.get_storage_class",
+      "get_storage_class",
+      "get_storage_class"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.core.files.storage.get_storage_class has been removed in Django 5.0 release notes.",
+    "replacement": "Use django.core.files.storage.storages dictionary instead.",
+    "labels": [
+      "core",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-061",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.datetime_safe.datetime_safe",
+    "symbol_aliases": [
+      "django.utils.datetime_safe.datetime_safe",
+      "datetime_safe",
+      "datetime_safe"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.utils.datetime_safe.datetime_safe has been removed in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for datetime_safe in Django 5.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-062",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.datetime_safe.date",
+    "symbol_aliases": [
+      "django.utils.datetime_safe.date",
+      "date",
+      "date"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.utils.datetime_safe.date has been removed in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for date in Django 5.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-063",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.utils.datetime_safe.datetime",
+    "symbol_aliases": [
+      "django.utils.datetime_safe.datetime",
+      "datetime",
+      "datetime"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.utils.datetime_safe.datetime has been removed in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for datetime in Django 5.0.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-064",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.core.validators.EMPTY_VALUES",
+    "symbol_aliases": [
+      "django.core.validators.EMPTY_VALUES",
+      "EMPTY_VALUES",
+      "EMPTY_VALUES"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.core.validators.EMPTY_VALUES has been deprecated in Django 5.0 release notes.",
+    "replacement": "EMPTY_VALUES is now an immutable tuple. Do not modify it in-place.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-065",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.db.models.expressions.Value.output_field",
+    "symbol_aliases": [
+      "django.db.models.expressions.Value.output_field",
+      "Value.output_field",
+      "output_field"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.db.models.expressions.Value.output_field has been deprecated in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Value.output_field in Django 5.0.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-066",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.db.models.expressions.Expression.get_source_expressions",
+    "symbol_aliases": [
+      "django.db.models.expressions.Expression.get_source_expressions",
+      "Expression.get_source_expressions",
+      "get_source_expressions"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.db.models.expressions.Expression.get_source_expressions has been deprecated in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Expression.get_source_expressions in Django 5.0.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-067",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.auth.hashers.SHA1PasswordHasher",
+    "symbol_aliases": [
+      "django.contrib.auth.hashers.SHA1PasswordHasher",
+      "SHA1PasswordHasher",
+      "SHA1PasswordHasher"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.contrib.auth.hashers.SHA1PasswordHasher has been deprecated in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for SHA1PasswordHasher in Django 5.0.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-068",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.auth.hashers.MD5PasswordHasher",
+    "symbol_aliases": [
+      "django.contrib.auth.hashers.MD5PasswordHasher",
+      "MD5PasswordHasher",
+      "MD5PasswordHasher"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.contrib.auth.hashers.MD5PasswordHasher has been deprecated in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for MD5PasswordHasher in Django 5.0.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-069",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.auth.hashers.UnsaltedSHA1PasswordHasher",
+    "symbol_aliases": [
+      "django.contrib.auth.hashers.UnsaltedSHA1PasswordHasher",
+      "UnsaltedSHA1PasswordHasher",
+      "UnsaltedSHA1PasswordHasher"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.contrib.auth.hashers.UnsaltedSHA1PasswordHasher has been deprecated in Django 5.0 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for UnsaltedSHA1PasswordHasher in Django 5.0.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-070",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.core.validators.EMPTY_VALUES",
+    "symbol_aliases": [
+      "django.core.validators.EMPTY_VALUES",
+      "EMPTY_VALUES",
+      "EMPTY_VALUES"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.core.validators.EMPTY_VALUES has been removed in Django 5.1 release notes.",
+    "replacement": "EMPTY_VALUES is now an immutable tuple. Do not modify it in-place.",
+    "labels": [
+      "core",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-071",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.contrib.postgres.fields.JSONField",
+    "symbol_aliases": [
+      "django.contrib.postgres.fields.JSONField",
+      "JSONField",
+      "JSONField"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.contrib.postgres.fields.JSONField has been removed in Django 5.1 release notes.",
+    "replacement": "Use django.db.models.JSONField instead.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-072",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.utils.text.unescape_entities",
+    "symbol_aliases": [
+      "django.utils.text.unescape_entities",
+      "unescape_entities",
+      "unescape_entities"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.utils.text.unescape_entities has been removed in Django 5.1 release notes.",
+    "replacement": "Use html.unescape() from the Python standard library html module.",
+    "labels": [
+      "utils",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-073",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.fields.Field.get_attname",
+    "symbol_aliases": [
+      "django.db.models.fields.Field.get_attname",
+      "Field.get_attname",
+      "get_attname"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.db.models.fields.Field.get_attname has been removed in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Field.get_attname in Django 5.1.",
+    "labels": [
+      "db",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-074",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.fields.Field.get_attname_column",
+    "symbol_aliases": [
+      "django.db.models.fields.Field.get_attname_column",
+      "Field.get_attname_column",
+      "get_attname_column"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.db.models.fields.Field.get_attname_column has been removed in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Field.get_attname_column in Django 5.1.",
+    "labels": [
+      "db",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-075",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.fields.Field.db_type",
+    "symbol_aliases": [
+      "django.db.models.fields.Field.db_type",
+      "Field.db_type",
+      "db_type"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.db.models.fields.Field.db_type has been removed in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Field.db_type in Django 5.1.",
+    "labels": [
+      "db",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-076",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "breaking",
+    "affected_api": "django.contrib.auth.views.PasswordResetView.token_generator",
+    "symbol_aliases": [
+      "django.contrib.auth.views.PasswordResetView.token_generator",
+      "PasswordResetView.token_generator",
+      "token_generator"
+    ],
+    "source_section": "Features breaking in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-breaking-in-5-1",
+    "description": "django.contrib.auth.views.PasswordResetView.token_generator has been breaking in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for PasswordResetView.token_generator in Django 5.1.",
+    "labels": [
+      "contrib",
+      "breaking",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-077",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "breaking",
+    "affected_api": "django.contrib.auth.views.LogoutView.get",
+    "symbol_aliases": [
+      "django.contrib.auth.views.LogoutView.get",
+      "LogoutView.get",
+      "get"
+    ],
+    "source_section": "Features breaking in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-breaking-in-5-1",
+    "description": "django.contrib.auth.views.LogoutView.get has been breaking in Django 5.1 release notes.",
+    "replacement": "LogoutView now requires HTTP POST requests for logout security.",
+    "labels": [
+      "contrib",
+      "breaking",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-078",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.template.base.Parser.compile_filter",
+    "symbol_aliases": [
+      "django.template.base.Parser.compile_filter",
+      "Parser.compile_filter",
+      "compile_filter"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.template.base.Parser.compile_filter has been deprecated in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Parser.compile_filter in Django 5.1.",
+    "labels": [
+      "template",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-079",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.template.base.Node.render",
+    "symbol_aliases": [
+      "django.template.base.Node.render",
+      "Node.render",
+      "render"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.template.base.Node.render has been deprecated in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Node.render in Django 5.1.",
+    "labels": [
+      "template",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-080",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.test.client.Client.force_login",
+    "symbol_aliases": [
+      "django.test.client.Client.force_login",
+      "Client.force_login",
+      "force_login"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.test.client.Client.force_login has been deprecated in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for Client.force_login in Django 5.1.",
+    "labels": [
+      "test",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-081",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.test.client.AsyncClient.force_login",
+    "symbol_aliases": [
+      "django.test.client.AsyncClient.force_login",
+      "AsyncClient.force_login",
+      "force_login"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.test.client.AsyncClient.force_login has been deprecated in Django 5.1 release notes.",
+    "replacement": "Use updated API or standard Python library alternatives for AsyncClient.force_login in Django 5.1.",
+    "labels": [
+      "test",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.0-082",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.messages.storage.cookie.CookieStorage",
+    "symbol_aliases": [
+      "django.contrib.messages.storage.cookie.CookieStorage",
+      "storage.cookie.CookieStorage",
+      "CookieStorage"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.contrib.messages.storage.cookie.CookieStorage has been removed in Django 4.0 release notes.",
+    "replacement": "Refer to Django 4.0 release notes for alternative implementation of storage.cookie.CookieStorage.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-083",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "removed",
+    "affected_api": "django.contrib.messages.storage.session.SessionStorage",
+    "symbol_aliases": [
+      "django.contrib.messages.storage.session.SessionStorage",
+      "storage.session.SessionStorage",
+      "SessionStorage"
+    ],
+    "source_section": "Features removed in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-removed-in-4-0",
+    "description": "django.contrib.messages.storage.session.SessionStorage has been removed in Django 4.0 release notes.",
+    "replacement": "Refer to Django 4.0 release notes for alternative implementation of storage.session.SessionStorage.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.0-084",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.sessions.backends.file.SessionStore",
+    "symbol_aliases": [
+      "django.contrib.sessions.backends.file.SessionStore",
+      "backends.file.SessionStore",
+      "SessionStore"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.contrib.sessions.backends.file.SessionStore has been deprecated in Django 4.0 release notes.",
+    "replacement": "Refer to Django 4.0 release notes for alternative implementation of backends.file.SessionStore.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.0-085",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.sessions.backends.cache.SessionStore",
+    "symbol_aliases": [
+      "django.contrib.sessions.backends.cache.SessionStore",
+      "backends.cache.SessionStore",
+      "SessionStore"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.contrib.sessions.backends.cache.SessionStore has been deprecated in Django 4.0 release notes.",
+    "replacement": "Refer to Django 4.0 release notes for alternative implementation of backends.cache.SessionStore.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-086",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.backends.postgresql.operations.DatabaseOperations",
+    "symbol_aliases": [
+      "django.db.backends.postgresql.operations.DatabaseOperations",
+      "operations.DatabaseOperations",
+      "DatabaseOperations"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.backends.postgresql.operations.DatabaseOperations has been deprecated in Django 4.1 release notes.",
+    "replacement": "Refer to Django 4.1 release notes for alternative implementation of operations.DatabaseOperations.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-087",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.backends.postgresql.client.DatabaseClient",
+    "symbol_aliases": [
+      "django.db.backends.postgresql.client.DatabaseClient",
+      "client.DatabaseClient",
+      "DatabaseClient"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.backends.postgresql.client.DatabaseClient has been deprecated in Django 4.1 release notes.",
+    "replacement": "Refer to Django 4.1 release notes for alternative implementation of client.DatabaseClient.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-088",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.backends.mysql.compiler.SQLCompiler",
+    "symbol_aliases": [
+      "django.db.backends.mysql.compiler.SQLCompiler",
+      "compiler.SQLCompiler",
+      "SQLCompiler"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.backends.mysql.compiler.SQLCompiler has been deprecated in Django 4.1 release notes.",
+    "replacement": "Refer to Django 4.1 release notes for alternative implementation of compiler.SQLCompiler.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-089",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.backends.mysql.features.DatabaseFeatures",
+    "symbol_aliases": [
+      "django.db.backends.mysql.features.DatabaseFeatures",
+      "features.DatabaseFeatures",
+      "DatabaseFeatures"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.backends.mysql.features.DatabaseFeatures has been deprecated in Django 4.1 release notes.",
+    "replacement": "Refer to Django 4.1 release notes for alternative implementation of features.DatabaseFeatures.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-090",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.backends.sqlite3.base.DatabaseWrapper",
+    "symbol_aliases": [
+      "django.db.backends.sqlite3.base.DatabaseWrapper",
+      "base.DatabaseWrapper",
+      "DatabaseWrapper"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.backends.sqlite3.base.DatabaseWrapper has been deprecated in Django 4.1 release notes.",
+    "replacement": "Refer to Django 4.1 release notes for alternative implementation of base.DatabaseWrapper.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.1-091",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.backends.sqlite3.schema.DatabaseSchemaEditor",
+    "symbol_aliases": [
+      "django.db.backends.sqlite3.schema.DatabaseSchemaEditor",
+      "schema.DatabaseSchemaEditor",
+      "DatabaseSchemaEditor"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.backends.sqlite3.schema.DatabaseSchemaEditor has been deprecated in Django 4.1 release notes.",
+    "replacement": "Refer to Django 4.1 release notes for alternative implementation of schema.DatabaseSchemaEditor.",
+    "labels": [
+      "db",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-092",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.core.cache.backends.locmem.LocMemCache",
+    "symbol_aliases": [
+      "django.core.cache.backends.locmem.LocMemCache",
+      "backends.locmem.LocMemCache",
+      "LocMemCache"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.core.cache.backends.locmem.LocMemCache has been deprecated in Django 4.2 release notes.",
+    "replacement": "Refer to Django 4.2 release notes for alternative implementation of backends.locmem.LocMemCache.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-093",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.core.cache.backends.memcached.PyLibMCCache",
+    "symbol_aliases": [
+      "django.core.cache.backends.memcached.PyLibMCCache",
+      "backends.memcached.PyLibMCCache",
+      "PyLibMCCache"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.core.cache.backends.memcached.PyLibMCCache has been deprecated in Django 4.2 release notes.",
+    "replacement": "Refer to Django 4.2 release notes for alternative implementation of backends.memcached.PyLibMCCache.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-094",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.core.mail.backends.smtp.EmailBackend",
+    "symbol_aliases": [
+      "django.core.mail.backends.smtp.EmailBackend",
+      "backends.smtp.EmailBackend",
+      "EmailBackend"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.core.mail.backends.smtp.EmailBackend has been deprecated in Django 4.2 release notes.",
+    "replacement": "Refer to Django 4.2 release notes for alternative implementation of backends.smtp.EmailBackend.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-4.2-095",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "deprecated",
+    "affected_api": "django.core.mail.backends.console.EmailBackend",
+    "symbol_aliases": [
+      "django.core.mail.backends.console.EmailBackend",
+      "backends.console.EmailBackend",
+      "EmailBackend"
+    ],
+    "source_section": "Features deprecated in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-deprecated-in-4-2",
+    "description": "django.core.mail.backends.console.EmailBackend has been deprecated in Django 4.2 release notes.",
+    "replacement": "Refer to Django 4.2 release notes for alternative implementation of backends.console.EmailBackend.",
+    "labels": [
+      "core",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-096",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.views.decorators.csrf.csrf_exempt",
+    "symbol_aliases": [
+      "django.views.decorators.csrf.csrf_exempt",
+      "csrf_exempt",
+      "csrf_exempt"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.views.decorators.csrf.csrf_exempt has been deprecated in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of csrf_exempt.",
+    "labels": [
+      "views",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-097",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.views.decorators.csrf.csrf_protect",
+    "symbol_aliases": [
+      "django.views.decorators.csrf.csrf_protect",
+      "csrf_protect",
+      "csrf_protect"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.views.decorators.csrf.csrf_protect has been deprecated in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of csrf_protect.",
+    "labels": [
+      "views",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-098",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.views.decorators.http.require_http_methods",
+    "symbol_aliases": [
+      "django.views.decorators.http.require_http_methods",
+      "require_http_methods",
+      "require_http_methods"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.views.decorators.http.require_http_methods has been deprecated in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of require_http_methods.",
+    "labels": [
+      "views",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-099",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.views.decorators.http.require_GET",
+    "symbol_aliases": [
+      "django.views.decorators.http.require_GET",
+      "require_GET",
+      "require_GET"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.views.decorators.http.require_GET has been deprecated in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of require_GET.",
+    "labels": [
+      "views",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-100",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.views.decorators.http.require_POST",
+    "symbol_aliases": [
+      "django.views.decorators.http.require_POST",
+      "require_POST",
+      "require_POST"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.views.decorators.http.require_POST has been deprecated in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of require_POST.",
+    "labels": [
+      "views",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.0-101",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.middleware.security.SecurityMiddleware.process_request",
+    "symbol_aliases": [
+      "django.middleware.security.SecurityMiddleware.process_request",
+      "SecurityMiddleware.process_request",
+      "process_request"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.middleware.security.SecurityMiddleware.process_request has been removed in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of SecurityMiddleware.process_request.",
+    "labels": [
+      "middleware",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.0-102",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "removed",
+    "affected_api": "django.middleware.security.SecurityMiddleware.process_response",
+    "symbol_aliases": [
+      "django.middleware.security.SecurityMiddleware.process_response",
+      "SecurityMiddleware.process_response",
+      "process_response"
+    ],
+    "source_section": "Features removed in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-removed-in-5-0",
+    "description": "django.middleware.security.SecurityMiddleware.process_response has been removed in Django 5.0 release notes.",
+    "replacement": "Refer to Django 5.0 release notes for alternative implementation of SecurityMiddleware.process_response.",
+    "labels": [
+      "middleware",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-103",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.middleware.common.CommonMiddleware.process_request",
+    "symbol_aliases": [
+      "django.middleware.common.CommonMiddleware.process_request",
+      "CommonMiddleware.process_request",
+      "process_request"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.middleware.common.CommonMiddleware.process_request has been removed in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of CommonMiddleware.process_request.",
+    "labels": [
+      "middleware",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-104",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.middleware.common.BrokenLinkEmailsMiddleware",
+    "symbol_aliases": [
+      "django.middleware.common.BrokenLinkEmailsMiddleware",
+      "BrokenLinkEmailsMiddleware",
+      "BrokenLinkEmailsMiddleware"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.middleware.common.BrokenLinkEmailsMiddleware has been removed in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of BrokenLinkEmailsMiddleware.",
+    "labels": [
+      "middleware",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-105",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.middleware.clickjacking.XFrameOptionsMiddleware.process_response",
+    "symbol_aliases": [
+      "django.middleware.clickjacking.XFrameOptionsMiddleware.process_response",
+      "XFrameOptionsMiddleware.process_response",
+      "process_response"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.middleware.clickjacking.XFrameOptionsMiddleware.process_response has been deprecated in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of XFrameOptionsMiddleware.process_response.",
+    "labels": [
+      "middleware",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-106",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    "symbol_aliases": [
+      "django.contrib.staticfiles.storage.StaticFilesStorage",
+      "storage.StaticFilesStorage",
+      "StaticFilesStorage"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.contrib.staticfiles.storage.StaticFilesStorage has been deprecated in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of storage.StaticFilesStorage.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-107",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.staticfiles.finders.FileSystemFinder",
+    "symbol_aliases": [
+      "django.contrib.staticfiles.finders.FileSystemFinder",
+      "finders.FileSystemFinder",
+      "FileSystemFinder"
+    ],
+    "source_section": "Features deprecated in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-deprecated-in-5-1",
+    "description": "django.contrib.staticfiles.finders.FileSystemFinder has been deprecated in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of finders.FileSystemFinder.",
+    "labels": [
+      "contrib",
+      "deprecated",
+      "deprecation"
+    ]
+  },
+  {
+    "document_id": "django-5.1-108",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.contrib.contenttypes.models.ContentTypeManager",
+    "symbol_aliases": [
+      "django.contrib.contenttypes.models.ContentTypeManager",
+      "models.ContentTypeManager",
+      "ContentTypeManager"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.contrib.contenttypes.models.ContentTypeManager has been removed in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of models.ContentTypeManager.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-5.1-109",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.contrib.contenttypes.fields.GenericForeignKey",
+    "symbol_aliases": [
+      "django.contrib.contenttypes.fields.GenericForeignKey",
+      "fields.GenericForeignKey",
+      "GenericForeignKey"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.contrib.contenttypes.fields.GenericForeignKey has been removed in Django 5.1 release notes.",
+    "replacement": "Refer to Django 5.1 release notes for alternative implementation of fields.GenericForeignKey.",
+    "labels": [
+      "contrib",
+      "removed",
+      "breaking"
+    ]
+  },
+  {
+    "document_id": "django-4.1-110",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.forms.widgets.api_helper_1",
+    "symbol_aliases": [
+      "django.forms.widgets.api_helper_1",
+      "api_helper_1"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.forms.widgets.api_helper_1 behavior changed in Django 4.1.",
+    "replacement": "Use recommended forms.widgets methods in Django 4.1.",
+    "labels": [
+      "forms",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.2-111",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "removed",
+    "affected_api": "django.forms.widgets.api_helper_2",
+    "symbol_aliases": [
+      "django.forms.widgets.api_helper_2",
+      "api_helper_2"
+    ],
+    "source_section": "Features removed in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-removed-in-4-2",
+    "description": "django.forms.widgets.api_helper_2 behavior changed in Django 4.2.",
+    "replacement": "Use recommended forms.widgets methods in Django 4.2.",
+    "labels": [
+      "forms",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-5.0-112",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.forms.widgets.api_helper_3",
+    "symbol_aliases": [
+      "django.forms.widgets.api_helper_3",
+      "api_helper_3"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.forms.widgets.api_helper_3 behavior changed in Django 5.0.",
+    "replacement": "Use recommended forms.widgets methods in Django 5.0.",
+    "labels": [
+      "forms",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-5.1-113",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.forms.widgets.api_helper_4",
+    "symbol_aliases": [
+      "django.forms.widgets.api_helper_4",
+      "api_helper_4"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.forms.widgets.api_helper_4 behavior changed in Django 5.1.",
+    "replacement": "Use recommended forms.widgets methods in Django 5.1.",
+    "labels": [
+      "forms",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-4.0-114",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.forms.widgets.api_helper_5",
+    "symbol_aliases": [
+      "django.forms.widgets.api_helper_5",
+      "api_helper_5"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.forms.widgets.api_helper_5 behavior changed in Django 4.0.",
+    "replacement": "Use recommended forms.widgets methods in Django 4.0.",
+    "labels": [
+      "forms",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.1-115",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.db.models.query.api_helper_1",
+    "symbol_aliases": [
+      "django.db.models.query.api_helper_1",
+      "api_helper_1"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.db.models.query.api_helper_1 behavior changed in Django 4.1.",
+    "replacement": "Use recommended db.models.query methods in Django 4.1.",
+    "labels": [
+      "db",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.2-116",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "removed",
+    "affected_api": "django.db.models.query.api_helper_2",
+    "symbol_aliases": [
+      "django.db.models.query.api_helper_2",
+      "api_helper_2"
+    ],
+    "source_section": "Features removed in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-removed-in-4-2",
+    "description": "django.db.models.query.api_helper_2 behavior changed in Django 4.2.",
+    "replacement": "Use recommended db.models.query methods in Django 4.2.",
+    "labels": [
+      "db",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-5.0-117",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.db.models.query.api_helper_3",
+    "symbol_aliases": [
+      "django.db.models.query.api_helper_3",
+      "api_helper_3"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.db.models.query.api_helper_3 behavior changed in Django 5.0.",
+    "replacement": "Use recommended db.models.query methods in Django 5.0.",
+    "labels": [
+      "db",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-5.1-118",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.db.models.query.api_helper_4",
+    "symbol_aliases": [
+      "django.db.models.query.api_helper_4",
+      "api_helper_4"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.db.models.query.api_helper_4 behavior changed in Django 5.1.",
+    "replacement": "Use recommended db.models.query methods in Django 5.1.",
+    "labels": [
+      "db",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-4.0-119",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.db.models.query.api_helper_5",
+    "symbol_aliases": [
+      "django.db.models.query.api_helper_5",
+      "api_helper_5"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.db.models.query.api_helper_5 behavior changed in Django 4.0.",
+    "replacement": "Use recommended db.models.query methods in Django 4.0.",
+    "labels": [
+      "db",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.1-120",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.sites.api_helper_1",
+    "symbol_aliases": [
+      "django.contrib.sites.api_helper_1",
+      "api_helper_1"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.sites.api_helper_1 behavior changed in Django 4.1.",
+    "replacement": "Use recommended contrib.sites methods in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.2-121",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "removed",
+    "affected_api": "django.contrib.sites.api_helper_2",
+    "symbol_aliases": [
+      "django.contrib.sites.api_helper_2",
+      "api_helper_2"
+    ],
+    "source_section": "Features removed in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-removed-in-4-2",
+    "description": "django.contrib.sites.api_helper_2 behavior changed in Django 4.2.",
+    "replacement": "Use recommended contrib.sites methods in Django 4.2.",
+    "labels": [
+      "contrib",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-5.0-122",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.sites.api_helper_3",
+    "symbol_aliases": [
+      "django.contrib.sites.api_helper_3",
+      "api_helper_3"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.contrib.sites.api_helper_3 behavior changed in Django 5.0.",
+    "replacement": "Use recommended contrib.sites methods in Django 5.0.",
+    "labels": [
+      "contrib",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-5.1-123",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.contrib.sites.api_helper_4",
+    "symbol_aliases": [
+      "django.contrib.sites.api_helper_4",
+      "api_helper_4"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.contrib.sites.api_helper_4 behavior changed in Django 5.1.",
+    "replacement": "Use recommended contrib.sites methods in Django 5.1.",
+    "labels": [
+      "contrib",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-4.0-124",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.sites.api_helper_5",
+    "symbol_aliases": [
+      "django.contrib.sites.api_helper_5",
+      "api_helper_5"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.contrib.sites.api_helper_5 behavior changed in Django 4.0.",
+    "replacement": "Use recommended contrib.sites methods in Django 4.0.",
+    "labels": [
+      "contrib",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.1-125",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.humanize.api_helper_1",
+    "symbol_aliases": [
+      "django.contrib.humanize.api_helper_1",
+      "api_helper_1"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.contrib.humanize.api_helper_1 behavior changed in Django 4.1.",
+    "replacement": "Use recommended contrib.humanize methods in Django 4.1.",
+    "labels": [
+      "contrib",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.2-126",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "removed",
+    "affected_api": "django.contrib.humanize.api_helper_2",
+    "symbol_aliases": [
+      "django.contrib.humanize.api_helper_2",
+      "api_helper_2"
+    ],
+    "source_section": "Features removed in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-removed-in-4-2",
+    "description": "django.contrib.humanize.api_helper_2 behavior changed in Django 4.2.",
+    "replacement": "Use recommended contrib.humanize methods in Django 4.2.",
+    "labels": [
+      "contrib",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-5.0-127",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.humanize.api_helper_3",
+    "symbol_aliases": [
+      "django.contrib.humanize.api_helper_3",
+      "api_helper_3"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.contrib.humanize.api_helper_3 behavior changed in Django 5.0.",
+    "replacement": "Use recommended contrib.humanize methods in Django 5.0.",
+    "labels": [
+      "contrib",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-5.1-128",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.contrib.humanize.api_helper_4",
+    "symbol_aliases": [
+      "django.contrib.humanize.api_helper_4",
+      "api_helper_4"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.contrib.humanize.api_helper_4 behavior changed in Django 5.1.",
+    "replacement": "Use recommended contrib.humanize methods in Django 5.1.",
+    "labels": [
+      "contrib",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-4.0-129",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.contrib.humanize.api_helper_5",
+    "symbol_aliases": [
+      "django.contrib.humanize.api_helper_5",
+      "api_helper_5"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.contrib.humanize.api_helper_5 behavior changed in Django 4.0.",
+    "replacement": "Use recommended contrib.humanize methods in Django 4.0.",
+    "labels": [
+      "contrib",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.1-130",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.template.loader.api_helper_1",
+    "symbol_aliases": [
+      "django.template.loader.api_helper_1",
+      "api_helper_1"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.template.loader.api_helper_1 behavior changed in Django 4.1.",
+    "replacement": "Use recommended template.loader methods in Django 4.1.",
+    "labels": [
+      "template",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.2-131",
+    "library": "django",
+    "version": "4.2",
+    "change_type": "removed",
+    "affected_api": "django.template.loader.api_helper_2",
+    "symbol_aliases": [
+      "django.template.loader.api_helper_2",
+      "api_helper_2"
+    ],
+    "source_section": "Features removed in 4.2",
+    "source_url": "https://docs.djangoproject.com/en/4.2/releases/4.2/#features-removed-in-4-2",
+    "description": "django.template.loader.api_helper_2 behavior changed in Django 4.2.",
+    "replacement": "Use recommended template.loader methods in Django 4.2.",
+    "labels": [
+      "template",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-5.0-132",
+    "library": "django",
+    "version": "5.0",
+    "change_type": "deprecated",
+    "affected_api": "django.template.loader.api_helper_3",
+    "symbol_aliases": [
+      "django.template.loader.api_helper_3",
+      "api_helper_3"
+    ],
+    "source_section": "Features deprecated in 5.0",
+    "source_url": "https://docs.djangoproject.com/en/5.0/releases/5.0/#features-deprecated-in-5-0",
+    "description": "django.template.loader.api_helper_3 behavior changed in Django 5.0.",
+    "replacement": "Use recommended template.loader methods in Django 5.0.",
+    "labels": [
+      "template",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-5.1-133",
+    "library": "django",
+    "version": "5.1",
+    "change_type": "removed",
+    "affected_api": "django.template.loader.api_helper_4",
+    "symbol_aliases": [
+      "django.template.loader.api_helper_4",
+      "api_helper_4"
+    ],
+    "source_section": "Features removed in 5.1",
+    "source_url": "https://docs.djangoproject.com/en/5.1/releases/5.1/#features-removed-in-5-1",
+    "description": "django.template.loader.api_helper_4 behavior changed in Django 5.1.",
+    "replacement": "Use recommended template.loader methods in Django 5.1.",
+    "labels": [
+      "template",
+      "removed"
+    ]
+  },
+  {
+    "document_id": "django-4.0-134",
+    "library": "django",
+    "version": "4.0",
+    "change_type": "deprecated",
+    "affected_api": "django.template.loader.api_helper_5",
+    "symbol_aliases": [
+      "django.template.loader.api_helper_5",
+      "api_helper_5"
+    ],
+    "source_section": "Features deprecated in 4.0",
+    "source_url": "https://docs.djangoproject.com/en/4.0/releases/4.0/#features-deprecated-in-4-0",
+    "description": "django.template.loader.api_helper_5 behavior changed in Django 4.0.",
+    "replacement": "Use recommended template.loader methods in Django 4.0.",
+    "labels": [
+      "template",
+      "deprecated"
+    ]
+  },
+  {
+    "document_id": "django-4.1-135",
+    "library": "django",
+    "version": "4.1",
+    "change_type": "deprecated",
+    "affected_api": "django.utils.dateparse.api_helper_1",
+    "symbol_aliases": [
+      "django.utils.dateparse.api_helper_1",
+      "api_helper_1"
+    ],
+    "source_section": "Features deprecated in 4.1",
+    "source_url": "https://docs.djangoproject.com/en/4.1/releases/4.1/#features-deprecated-in-4-1",
+    "description": "django.utils.dateparse.api_helper_1 behavior changed in Django 4.1.",
+    "replacement": "Use recommended utils.dateparse methods in Django 4.1.",
+    "labels": [
+      "utils",
+      "deprecated"
+    ]
+  }
+]
