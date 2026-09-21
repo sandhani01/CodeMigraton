@@ -1,13 +1,11 @@
 from typing import List, Optional
 from pydantic import BaseModel, Field
 
-
 class AnalysisRequest(BaseModel):
     code: str = Field(..., description="Source code written in older Django")
     library: str = Field(default="django", description="Target library (default: django)")
     from_version: str = Field(default="4.0", description="Source/starting version (e.g. 4.0)")
     to_version: str = Field(default="5.1", description="Target version (e.g. 5.1)")
-
 
 class Citation(BaseModel):
     document_id: str = Field(..., description="Unique dataset document identifier (e.g. django-5.0-001)")
@@ -15,7 +13,6 @@ class Citation(BaseModel):
     title: str = Field(..., description="Title or section name of the release notes")
     source_url: str = Field(..., description="Official documentation URL")
     supporting_text: str = Field(..., description="Exact supporting text / description")
-
 
 class Finding(BaseModel):
     line: int = Field(..., description="Source line number where the affected API was detected")
@@ -26,14 +23,12 @@ class Finding(BaseModel):
     suggested_fix: str = Field(..., description="Recommended migration path or replacement")
     citations: List[Citation] = Field(default_factory=list, description="Verified citations")
 
-
 class AnalysisResponse(BaseModel):
     status: str = Field(..., description="Analysis status (e.g. completed, unverified)")
     from_version: str
     to_version: str
     findings: List[Finding]
     raw_evidence_count: int = Field(default=0, description="Total evidence chunks retrieved")
-
 
 class EvidenceChunk(BaseModel):
     document_id: str

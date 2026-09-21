@@ -1,5 +1,3 @@
-"""FastAPI application entrypoint for CodeMigrate AI Service."""
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import router
@@ -10,7 +8,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -21,7 +18,6 @@ app.add_middleware(
 
 app.include_router(router)
 
-
 @app.get("/health")
 def health_check():
     return {
@@ -29,7 +25,6 @@ def health_check():
         "service": "CodeMigrate RAG Core",
         "version": "1.0.0"
     }
-
 
 if __name__ == "__main__":
     import uvicorn

@@ -1,20 +1,9 @@
-"""LLM Analyzer with Grounded Prompting and Structured JSON Output.
-
-Follows the prompt contract:
-- Instructs the LLM to rely ONLY on supplied retrieved evidence.
-- Solicits structured JSON with affected, change_type, explanation, suggested_fix, and evidence_ids.
-- Supports external LLM providers (Gemini / OpenAI) via environment variables,
-  with an offline deterministic grounded inference engine that executes the same
-  evidence reasoning when no API key is configured.
-"""
-
 import os
 import json
 import re
 from typing import Dict, Any, List, Optional
 import httpx
 from app.schemas.analysis import EvidenceChunk
-
 
 PROMPT_TEMPLATE = """You are CodeMigrate's AI Migration Specialist.
 Your task is to analyze the supplied Python code for Django breaking changes.
@@ -49,7 +38,6 @@ Return a JSON object ONLY with the following exact structure:
 }}
 """
 
-
 class LLMAnalyzer:
     def __init__(self):
         self.gemini_api_key = os.environ.get("GEMINI_API_KEY")
@@ -82,7 +70,6 @@ class LLMAnalyzer:
         to_version: str,
         evidence: List[EvidenceChunk]
     ) -> Dict[str, Any]:
-        """Runs grounded analysis on code and evidence."""
         evidence_text = self._format_evidence_text(evidence)
         prompt = PROMPT_TEMPLATE.format(
             line=line,
@@ -93,21 +80,18 @@ class LLMAnalyzer:
             evidence_text=evidence_text
         )
 
-        # 1. Try Gemini API if key is available
         if self.gemini_api_key:
             try:
                 return self._call_gemini(prompt)
             except Exception as e:
-                pass  # Fallback to grounded reasoner
+                pass  
 
-        # 2. Try OpenAI API if key is available
         if self.openai_api_key:
             try:
                 return self._call_openai(prompt)
             except Exception as e:
-                pass  # Fallback to grounded reasoner
+                pass  
 
-        # 3. Deterministic Grounded Reasoner (Guaranteed offline execution)
         return self._deterministic_grounded_reasoning(
             code_snippet=code_snippet,
             line=line,
@@ -123,7 +107,6 @@ class LLMAnalyzer:
         from_version: str,
         to_version: str
     ) -> str:
-        """Mode A (Without RAG): Raw LLM prediction without external evidence."""
         prompt = (
             f"Analyze this Django code upgrading from {from_version} to {to_version}.\n"
             f"Code:\n{code_snippet}\n"
@@ -138,7 +121,6 @@ class LLMAnalyzer:
             except Exception:
                 pass
 
-        # Realistic unassisted LLM response simulation for demonstration
         return (
             f"[Mode A - Unassisted LLM Output]\n"
             f"Based on general Django knowledge, upgrading from {from_version} to {to_version} "
@@ -155,7 +137,6 @@ class LLMAnalyzer:
         to_version: str,
         evidence: List[EvidenceChunk]
     ) -> Dict[str, Any]:
-        """Strictly grounds deduction in the retrieved evidence chunks."""
         if not evidence:
             return {
                 "affected": False,
@@ -167,7 +148,6 @@ class LLMAnalyzer:
                 "evidence_ids": []
             }
 
-        # Sort relevant chunks by change severity: removed > breaking > deprecated
         severity_map = {"removed": 3, "breaking": 2, "deprecated": 1, "none": 0}
         
         sym_lower = symbol.lower()
@@ -193,7 +173,6 @@ class LLMAnalyzer:
                 "evidence_ids": []
             }
 
-        # Pick most critical chunk (e.g. removed in 5.0 takes precedence over deprecated in 4.1)
         matching_chunks.sort(key=lambda c: severity_map.get(c.change_type, 0), reverse=True)
         primary_chunk = matching_chunks[0]
         evidence_ids = [c.document_id for c in matching_chunks]

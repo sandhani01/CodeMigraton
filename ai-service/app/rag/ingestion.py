@@ -1,17 +1,9 @@
-"""Document Ingestion & Meaningful Chunking for Django Breaking Changes.
-
-Loads release-note dataset, cleans content, attaches structured metadata,
-and formats each entry as a retrieval-optimized chunk.
-"""
-
 import json
 import os
 from typing import List, Dict, Any
 from app.schemas.analysis import EvidenceChunk
 
-
 def format_chunk_content(entry: Dict[str, Any]) -> str:
-    """Creates a rich, natural language chunk representation for semantic retrieval."""
     aliases_str = ", ".join(entry.get("symbol_aliases", []))
     labels_str = ", ".join(entry.get("labels", []))
     
@@ -25,9 +17,7 @@ def format_chunk_content(entry: Dict[str, Any]) -> str:
         f"Tags: {labels_str}"
     )
 
-
 def load_dataset_chunks(dataset_path: str) -> List[EvidenceChunk]:
-    """Loads dataset entries and parses them into structured EvidenceChunk objects."""
     if not os.path.exists(dataset_path):
         raise FileNotFoundError(f"Dataset file not found at: {dataset_path}")
 

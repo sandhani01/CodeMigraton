@@ -1,9 +1,3 @@
-"""Core CodeMigrate Analysis Service.
-
-Coordinates:
-    AST Analysis -> Hybrid Retrieval -> Grounded LLM Reasoning -> Citation Validation
-"""
-
 import os
 from typing import List, Dict, Any, Tuple, Optional, Set
 from app.schemas.analysis import AnalysisRequest, AnalysisResponse, Finding, EvidenceChunk
@@ -13,7 +7,6 @@ from app.rag.vector_store import InMemoryVectorStore
 from app.rag.retriever import HybridRetriever
 from app.llm.analyzer import LLMAnalyzer
 from app.validation.citation_validator import CitationValidator
-
 
 class CodeMigrateService:
     def __init__(self, dataset_path: Optional[str] = None):
@@ -28,7 +21,6 @@ class CodeMigrateService:
         self.initialized = False
 
     def initialize(self) -> None:
-        """Loads and indexes the breaking changes dataset."""
         if self.initialized:
             return
             
@@ -38,17 +30,14 @@ class CodeMigrateService:
         self.initialized = True
 
     def analyze(self, request: AnalysisRequest) -> AnalysisResponse:
-        """Runs end-to-end CodeMigrate analysis."""
         if not self.initialized:
             self.initialize()
 
-        # 1. AST Analysis (Deterministic)
         detected_symbols = analyze_code_ast(request.code)
         
         findings: List[Finding] = []
         total_evidence_retrieved = 0
 
-        # Group symbols to avoid duplicate processing of the same line + symbol
         seen_keys = set()
         unique_symbols = []
         for s in detected_symbols:
@@ -58,7 +47,6 @@ class CodeMigrateService:
                 unique_symbols.append(s)
 
         for sym in unique_symbols:
-            # 2. Hybrid Retrieval with Version Filtering
             evidence = self.retriever.retrieve(
                 api_symbol=sym.full_symbol,
                 from_version=request.from_version,
@@ -67,7 +55,6 @@ class CodeMigrateService:
             )
             total_evidence_retrieved += len(evidence)
 
-            # 3. Grounded LLM Analysis
             llm_result = self.llm_analyzer.analyze(
                 code_snippet=sym.code_context or request.code,
                 line=sym.line,
@@ -77,7 +64,6 @@ class CodeMigrateService:
                 evidence=evidence
             )
 
-            # 4. Deterministic Citation Validation
             finding = self.validator.validate_finding(
                 llm_output=llm_result,
                 retrieved_evidence=evidence,
@@ -85,11 +71,9 @@ class CodeMigrateService:
                 symbol_name=sym.full_symbol
             )
             
-            # Only include relevant findings or unverified reports
             if finding.status == "VERIFIED" and finding.change_type not in ("none", "not_affected"):
                 findings.append(finding)
             elif finding.status == "UNVERIFIED" and sym.symbol_type == "import":
-                # For imports that couldn't be verified, record unverified finding
                 findings.append(finding)
 
         status = "completed" if findings else "completed_clean"

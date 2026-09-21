@@ -1,18 +1,5 @@
-"""Deterministic Citation Validation Layer.
-
-Enforces the Grounding Rule:
-    NO SUPPORTING EVIDENCE -> NO VERIFIED CLAIM
-
-Cross-checks LLM findings against actually retrieved EvidenceChunks:
-1. Validates every evidence ID claimed by the model.
-2. Ensures the evidence was part of the active retrieval context.
-3. Injects true URLs, titles, and supporting text directly from stored chunks (preventing LLM hallucinated URLs).
-4. Rejects any finding that cannot produce an authentic, retrieved citation.
-"""
-
 from typing import List, Dict, Any, Tuple
 from app.schemas.analysis import EvidenceChunk, Citation, Finding
-
 
 class CitationValidator:
     @staticmethod
@@ -22,9 +9,7 @@ class CitationValidator:
         line_number: int,
         symbol_name: str
     ) -> Finding:
-        """Validates an LLM output against retrieved evidence and returns a verified/unverified Finding."""
         
-        # Grounding Rule check: If no evidence was retrieved at all
         if not retrieved_evidence:
             return Finding(
                 line=line_number,
@@ -58,11 +43,7 @@ class CitationValidator:
                     )
                 )
 
-        # If the LLM claimed it is affected, but cited invalid or non-retrieved IDs,
-        # fallback to any retrieved evidence that directly matches the symbol,
-        # or mark UNVERIFIED if no legitimate match exists.
         if not valid_citations:
-            # Check if any retrieved chunk explicitly matches the symbol
             for chunk in retrieved_evidence:
                 if symbol_name.lower() in [s.lower() for s in chunk.symbol_aliases] or symbol_name.lower() in chunk.affected_api.lower():
                     valid_citations.append(
@@ -89,7 +70,6 @@ class CitationValidator:
             explanation = "No evidence found indicating this API is deprecated or removed in the specified version range."
             suggested_fix = "No migration required."
         elif is_affected and not valid_citations:
-            # The LLM attempted to claim a breaking change without valid retrieved evidence!
             status = "UNVERIFIED"
             change_type = "unsupported_claim"
             explanation = "Unverified claim: LLM claimed a breaking change, but no authentic retrieved citation supports this."

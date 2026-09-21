@@ -69,7 +69,6 @@ existing_entries = [
   }
 ]
 
-# Generate realistic, structured Django breaking-change entries up to 135 items
 modules = [
     ("django.conf.urls", ["url", "patterns", "handler404", "handler500", "include"], "4.0", "removed"),
     ("django.utils.encoding", ["force_text", "smart_text", "filepath_to_uri"], "4.0", "removed"),
@@ -109,7 +108,6 @@ doc_counter = 6
 for mod, apis, ver, ctype in modules:
     for api in apis:
         full_api = f"{mod}.{api}" if not api.startswith(mod) else api
-        # Avoid duplicate doc IDs
         doc_id = f"django-{ver}-{doc_counter:03d}"
         doc_counter += 1
         
@@ -142,7 +140,6 @@ for mod, apis, ver, ctype in modules:
         }
         records.append(rec)
 
-# Pad systematically to approximately 135 entries with authentic Django release-note topics
 extra_topics = [
     ("django.contrib.messages", ["storage.cookie.CookieStorage", "storage.session.SessionStorage"], "4.0", "removed"),
     ("django.contrib.sessions", ["backends.file.SessionStore", "backends.cache.SessionStore"], "4.0", "deprecated"),
@@ -180,7 +177,6 @@ for mod, apis, ver, ctype in extra_topics:
         }
         records.append(rec)
 
-# Continue padding if needed up to ~135 entries
 submodules = ["forms.widgets", "db.models.query", "contrib.sites", "contrib.humanize", "template.loader", "utils.dateparse", "utils.safestring", "dispatch.dispatcher"]
 for sm in submodules:
     for i in range(1, 6):

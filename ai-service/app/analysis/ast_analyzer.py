@@ -1,16 +1,5 @@
-"""Deterministic Python AST Code Analyzer for Django API Extraction.
-
-This module inspects Python source code using Python's standard `ast` module.
-It extracts:
-- Imports (Import and ImportFrom)
-- Function and class calls (ast.Call)
-- Attribute accesses (ast.Attribute)
-While preserving exact line numbers and resolving symbols to their fully qualified modules.
-"""
-
 import ast
 from typing import List, Dict, Any, Optional
-
 
 class DetectedSymbol:
     def __init__(
@@ -23,7 +12,7 @@ class DetectedSymbol:
         code_context: str = ""
     ):
         self.line = line
-        self.symbol_type = symbol_type  # 'import', 'function_call', 'attribute_access'
+        self.symbol_type = symbol_type  
         self.name = name
         self.module = module
         self.full_symbol = full_symbol or (f"{module}.{name}" if module else name)
@@ -42,13 +31,11 @@ class DetectedSymbol:
     def __repr__(self) -> str:
         return f"<DetectedSymbol line={self.line} type={self.symbol_type} symbol={self.full_symbol}>"
 
-
 class ASTAnalyzer(ast.NodeVisitor):
     def __init__(self, source_code: str):
         self.source_code = source_code
         self.lines = source_code.splitlines()
         self.detected_symbols: List[DetectedSymbol] = []
-        # Map local names to their imported module (e.g. 'url' -> 'django.conf.urls')
         self.import_map: Dict[str, str] = {}
 
     def _get_context(self, lineno: int) -> str:
@@ -80,7 +67,6 @@ class ASTAnalyzer(ast.NodeVisitor):
             full_name = f"{module}.{alias.name}" if module else alias.name
             self.import_map[local_name] = full_name
             
-            # Detect any import from django
             if "django" in module or module.startswith("django"):
                 self.detected_symbols.append(
                     DetectedSymbol(
@@ -125,7 +111,6 @@ class ASTAnalyzer(ast.NodeVisitor):
         self.generic_visit(node)
 
     def _resolve_node_name(self, node: ast.AST) -> tuple[Optional[str], Optional[str], Optional[str]]:
-        """Resolves an AST node (Name, Attribute) to (name, full_symbol, module)."""
         if isinstance(node, ast.Name):
             name = node.id
             if name in self.import_map:
@@ -147,17 +132,13 @@ class ASTAnalyzer(ast.NodeVisitor):
 
         return None, None, None
 
-
 def analyze_code_ast(source_code: str) -> List[DetectedSymbol]:
-    """Parse python source code and return detected Django symbols with line numbers."""
     try:
         tree = ast.parse(source_code)
     except SyntaxError as e:
-        # Gracefully handle code fragments
         return []
 
     analyzer = ASTAnalyzer(source_code)
     analyzer.visit(tree)
     
-    # Filter to unique relevant entries prioritized by full_symbol and line
     return analyzer.detected_symbols
